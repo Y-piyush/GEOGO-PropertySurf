@@ -1,12 +1,12 @@
 import React from "react";
 import "./ProjectStackList_Object.css";
-import pic1 from '../pics/ap.jpg'
-import pic2 from '../pics/ap1.jpg'
-import pic3 from '../pics/ap2.jpg'
-import pic4 from '../pics/ap3.jpg'
-import pic5 from '../pics/ap4.jpg'
-import pic6 from '../pics/ap5.jpg'
-import pic7 from '../pics/ap6.jpg'
+// import pic1 from '../pics/ap.jpg'
+// import pic2 from '../pics/ap1.jpg'
+// import pic3 from '../pics/ap2.jpg'
+// import pic4 from '../pics/ap3.jpg'
+// import pic5 from '../pics/ap4.jpg'
+// import pic6 from '../pics/ap5.jpg'
+// import pic7 from '../pics/ap6.jpg'
 
 
 function ProjectStackListObject({ details, serverUrl, _handlePropertyClick })

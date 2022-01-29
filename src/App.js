@@ -3,17 +3,17 @@ import './App.css';
 // import PropertyList from "./components/PropertyList.js";
 import { useEffect, useState } from "react";
 import pic from './pics/family-home.jpeg'
-import pic1 from './pics/ap.jpg'
-import pic2 from './pics/ap1.jpg'
-import pic3 from './pics/ap2.jpg'
-import pic4 from './pics/ap3.jpg'
-import pic5 from './pics/ap4.jpg'
-import pic6 from './pics/ap5.jpg'
-import pic7 from './pics/ap6.jpg'
-import pic8 from './pics/defaultLocality.png'
-import Navbar from './components/Navbar';
-import Searchbox from './components/Search_box';
-import Slider1 from './components/Slider1';
+// import pic1 from './pics/ap.jpg'
+// import pic2 from './pics/ap1.jpg'
+// import pic3 from './pics/ap2.jpg'
+// import pic4 from './pics/ap3.jpg'
+// import pic5 from './pics/ap4.jpg'
+// import pic6 from './pics/ap5.jpg'
+// import pic7 from './pics/ap6.jpg'
+// import pic8 from './pics/defaultLocality.png'
+// import Navbar from './components/Navbar';
+// import Searchbox from './components/Search_box';
+// import Slider1 from './components/Slider1';
 import Slider2 from './components/Slider2';
 import axios from "axios";
 import MagicLineMenu from 'react-magic-line-menu';
@@ -22,7 +22,7 @@ import RequestCityForm from './components/RequestCity';
 import NewPropertyForm from './components/NewPropertyForm';
 import DisplayProperty from './components/DisplayProperty';
 import ProjectStackList1 from './components/ProjectStackList';
-import Loginbox from './components/Login_box';
+// import Loginbox from './components/Login_box';
 import ResidentialCheckBox from './components/Residential_dropdown';
 
 
@@ -34,7 +34,7 @@ import ResidentialCheckBox from './components/Residential_dropdown';
       const [active, setActiveIndex] = useState(0);
        const [cities, setCities] = useState([]);
        const [properties, setProperties] = useState([]);
-       const [navShow, setNavShow] = useState(false);
+     
        const [pn, setPn] = useState(0);
        const [infp, setInfp] = useState(true);
        const [selectedProperty, setSelectedProperty] = useState({});
@@ -52,7 +52,7 @@ import ResidentialCheckBox from './components/Residential_dropdown';
            .catch((error) =>
              alert("Something went wrong while trying to fetch cities! " + error)
            );
-        //  console.log('Reached cities!')
+        
        };
        const getProperties = () => {
          axios
@@ -81,8 +81,7 @@ import ResidentialCheckBox from './components/Residential_dropdown';
              alert("Something went wrong while submitting your request! " + error)
            );
          removePopup();
-        //  getCities();
-        //  getProperties();
+       
        };
      
        const handleNewPropertyForm = (event) => {
@@ -101,8 +100,7 @@ import ResidentialCheckBox from './components/Residential_dropdown';
              )
            );
          removePopup();
-        //  getCities();
-        //  getProperties();
+        
        };
      
        const handlePropertyClick = (data) => {
@@ -148,37 +146,37 @@ return (
                 {/*  */}
                  <div>
                       <div className="logo_img">
-                        <img src="https://static.99acres.com/universalapp/img/nnacres_white.png"/>
+                        <img src="https://static.99acres.com/universalapp/img/nnacres_white.png" alt="..."/>
                       </div>
                       
                  </div>
 
                  {/*  */}
-                 <nav class="navbar navbar-expand-sm  bg-transparent" id="navbar_top">
-        <div class="container-fluid">
+                 <nav className="navbar navbar-expand-sm  bg-transparent" id="navbar_top">
+        <div className="container-fluid">
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                  <span className="navbar-toggler-icon"></span>
                  </button>
           
-          <div class="collapse navbar-collapse" id="navbarNav2">
-            <ul class="navbar-nav">
-              <li class="nav-item item2">
-                <a class="nav-link active" aria-current="page" href="#">For Buyers</a>
+          <div className="collapse navbar-collapse" id="navbarNav2">
+            <ul className="navbar-nav">
+              <li className="nav-item item2">
+                <a className="nav-link active" aria-current="page" href="#">For Buyers</a>
               </li>
-              {/* <li class="nav-item">
-                <a class="nav-link" href="#">For Tenants</a>
+              {/* <li className="nav-item">
+                <a className="nav-link" href="#">For Tenants</a>
               </li> */}
-              <li class="nav-item item2">
-                <a class="nav-link" href="#">For Owners</a>
+              <li className="nav-item item2">
+                <a className="nav-link" href="#">For Owners</a>
               </li>
-              {/* <li class="nav-item">
-                <a class="nav-link" href="#">For Dealers/Builders</a>
+              {/* <li className="nav-item">
+                <a className="nav-link" href="#">For Dealers/Builders</a>
               </li> */}
               
-              <li class="nav-item">
-                <a class="nav-link"  onClick={() => setPn(1)} href="#">Post property</a>
+              <li className="nav-item">
+                <a className="nav-link"  onClick={() => setPn(1)} href="#">Post property</a>
               </li>
-              {/* <li class="nav-item">
+              {/* <li className="nav-item">
                    
                      
                           <Loginbox/>
@@ -221,7 +219,7 @@ return (
       </MagicLineMenu>
 
         </div>
-        <hr class="demo1"></hr>
+        <hr className="demo1"></hr>
         <div className="main_search">
         
         <div className="dropdown">
