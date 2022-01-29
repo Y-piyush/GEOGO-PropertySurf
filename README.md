@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Screenshots
-   <img src="https://github.com/Y-piyush/GEOGO-99acre_Clone/ss/Screenshot 2022-01-29 122939.png" width="70%">
+   <img src="https://github.com/Y-piyush/GEOGO-99acre_Clone/ss/Screenshot 2022-01-29 122939.jpg" width="70%">
 
 ## Available Scripts
 
